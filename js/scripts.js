@@ -11,8 +11,20 @@ function wordOrder(input){
 
   }
 
+      debugger;
+  var sort_words = allWords.sort(function(a, b) {
+      return a-b;
+    });
+  console.log(sort_words);
+
   var result = Object.keys(allWords);
+  console.log(result);
+  // var sort_array = result.sort(function(a, b){return b-a});
+  // console.log(sort_array);
+
   var super_result = result.join(' ');
+  console.log(super_result);
+
   return super_result;
 
 }
